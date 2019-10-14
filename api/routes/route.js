@@ -8,6 +8,8 @@ router
 router
     .route('/paywithpaypal')
     .post(homePageController.PayWithPaypal);
-
+router
+    .route('/sucess')
+    .get(homePageController.chargeUser);
 
 module.exports = router;
