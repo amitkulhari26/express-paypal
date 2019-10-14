@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>The Man Who Saw Everything</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JS/config.js"></script>
+    <script src="JS/indexController.js"></script>
+</head>
+
+<body>
+
+    <div class="container" ng-app="businessApp" ng-controller="indexController">
+        <div class="row">
+            <div class="col-sm-6 col-md-6">
+                <a href="/Image/image.jpg"><img src="/Image/image.jpg" alt="Book"></a>
+            </div>
+            <div class="col-sm-1 col-md-1">
+
+            </div>
+            <div class="col-sm-5 col-md-5">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h3>Author:</h3><br>
+                        <h3>Genre:</h3><br>
+                        <h3>Price:</h3>
+                    </div>
+                    <div class="col-sm-6">
+                        <h3>{{author}}</h3><br>
+                        <h3>{{genre}}</h3><br>
+                        <h3>{{price}}</h3>
+                    </div>
+
+                </div>
+                <hr>
+                <div class="row">
+                    <p>{{description}}</p>
+
+                </div>
+                <hr>
+                <div class="row">
+                    <button type="button" class="btn btn-primary" ng-click="buyBook()">Buy Now</button>
+                    {{data}}
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
